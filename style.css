@@ -2,6 +2,7 @@ body {
   width: auto;
   height: 100vw;
   background-size: cover;
+  overflow: overlay;
   background: hsla(145, 83%, 74%, 1);
 
   background: linear-gradient(
@@ -20,4 +21,22 @@ body {
     hsla(204, 77%, 76%, 1) 100%
   );
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#87F4B5", endColorstr="#93CBF1", GradientType=1 );
+}
+
+/*scrollbar customization*/
+::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+}
+
+/* ::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.219);
+} */
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
